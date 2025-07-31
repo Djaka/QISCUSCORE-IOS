@@ -21,7 +21,7 @@ let package = Package(
         .package(url: "https://github.com/SwiftyJSON/SwiftyJSON.git", from: "5.0.2"),
         
         // QiscusRealtime untuk real-time messaging (REQUIRED)
-        .package(path: "../QiscusRealtime-iOS"),
+        .package(url: "https://github.com/Djaka/QISCUSREALTIME-IOS.git", branch: "master"),
     ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
@@ -30,7 +30,7 @@ let package = Package(
             name: "QiscusCore",
             dependencies: [
                 "SwiftyJSON",
-                .product(name: "QiscusRealtime", package: "QiscusRealtime-iOS")
+                "QiscusRealtime"
             ],
             path: "Source/QiscusCore",
             exclude: [],

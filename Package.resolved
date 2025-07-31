@@ -19,6 +19,15 @@
       }
     },
     {
+      "identity" : "qiscusrealtime-ios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Djaka/QISCUSREALTIME-IOS.git",
+      "state" : {
+        "branch" : "master",
+        "revision" : "ae659f44b6a92771ee852b6d8abd8f76945d86a1"
+      }
+    },
+    {
       "identity" : "starscream",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/daltoniam/Starscream.git",
