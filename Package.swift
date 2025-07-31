@@ -4,7 +4,7 @@
 import PackageDescription
 
 let package = Package(
-    name: "QiscusCore-iOS",
+    name: "QiscusCore",
     platforms: [
         .iOS(.v12)
     ],
@@ -29,10 +29,10 @@ let package = Package(
         .target(
             name: "QiscusCore",
             dependencies: [
-                "SwiftyJSON",
-                .product(name: "QiscusRealtime", package: "QISCUSREALTIME-IOS")
+                .product(name: "SwiftyJSON", package: "SwiftyJSON"),
+                .product(name: "QiscusRealtime", package: "QiscusRealtime-iOS")
             ],
-            path: "Source/QiscusCore",
+            path: "Source",
             exclude: [],
             resources: [
                 .process("Resources"),
